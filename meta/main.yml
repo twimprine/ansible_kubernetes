@@ -1,0 +1,26 @@
+---
+galaxy_info:
+  role_name: kubernetes
+  author: Thomas Wimprine
+  description: Install and configure Kubernetes.
+  # company: your_company
+  license: MIT
+  min_ansible_version: "2.9"
+  platforms:
+    - name: Debian
+      versions:
+        - bullseye
+    - name: Ubuntu
+      versions:
+        - focal
+        - jammy
+  galaxy_tags:
+    - kubernetes
+    - containerd
+    - debian
+    - ubuntu
+    - automation
+    - devops
+    - k8s
+dependencies:
+  - role: geerlingguy.containerd
